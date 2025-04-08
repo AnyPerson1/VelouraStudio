@@ -1,0 +1,129 @@
+/* Temel stil */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Playwrite IE", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    z-index: 10;
+    background-color: rgba(255, 217, 0, 0.349);
+}
+
+#HeadText {
+    font-size: 30px;
+    color: rgb(102, 0, 102);
+    font-weight: 600;
+}
+
+#Navigation {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    width: 500px;
+}
+#SlideShowContainer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+#SlideShow {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    height: 500px;
+    background-color: aliceblue;
+    margin: 10px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#SlideShowSelectionContainer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px; /* Daha net bir pozisyon */
+    width: 100%;
+    z-index: 10;
+}
+
+.SlideShowSelector {
+    background-color: rgba(252, 252, 252, 0.726);
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    cursor: pointer; /* Tıklanabilir yapmak için */
+}
+
+.SlideShowSelector:hover {
+    background-color: rgba(0, 0, 0, 0.596);
+    transform: scale(1.2); /* Hoverda büyüme efekti */
+}
+
+#SlideShowImageContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease; /* Geçiş efekti */
+    width: 100%;
+    height: 100%;
+}
+
+.SlideShowImage {
+    display: none;
+    width: 96%;
+    height: 95%;
+    object-fit: cover; /* Görsellerin boyutlarını kırpıp uyumlu hale getirir */
+    border-radius: 10px; /* Kenarları yuvarlatmak */
+    box-shadow: 5px 5px 21px 6px rgba(79, 75, 84, 0.43);
+}
+.navigationItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-top: 3px rgb(211, 179, 0) solid;
+    margin-left: 5px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-right: 5px;
+    background-color: rgba(255, 217, 0, 0.781);
+    width: 100%;
+    height: 50px;
+    transition: 0.2s all;
+    color: rgb(102, 0, 102);
+    font-weight: 600;
+}
+
+.navigationItem:hover {
+    background-color: rgba(224, 191, 0, 0.836);
+    border-color: 3px rgb(136, 116, 0) solid;
+    transition: 0.2s all;
+}
+
+.navigationDiv {
+    position: absolute;
+    margin-top: 35px;
+    border-radius: 50px;
+    width: 0px;
+    height: 2px;
+    background-color: rgb(102, 0, 102);
+    transition: 0.2s all;
+}
+

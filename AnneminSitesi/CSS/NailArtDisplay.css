@@ -1,0 +1,46 @@
+.nailArtDisplay {
+    background: rgb(255,227,71);
+    background: linear-gradient(90deg, rgba(255,227,71,0.5) 0%, rgba(255,170,0,0.5) 100%);
+    border-color: rgba(123, 45, 180, 0.8);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 40px;
+    margin: 10px;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    position: relative; 
+    box-shadow: 5px 5px 21px 6px rgba(79, 75, 84, 0.43);
+    z-index: 0;
+}
+
+.nailArtDisplayFooter {
+    width: 100%;
+    height: 40px;
+    background: rgb(200,21,251);
+    background: linear-gradient(90deg, rgba(200,21,251,1) 0%, rgba(100,0,147,1) 100%);
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+}
+.nailArtDisplayImage{
+    margin-top: 5px;
+    height: 240px;
+    width: 95%;
+    border-radius: 40px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px rgba(123, 45, 180, 0.8) solid;
+    background-color: aqua;
+}
+.nailArtDisplayImageContainer{
+    display: flex;
+    justify-content: center;
+}
+.nailArtTitle{
+    font-size: small;
+    margin-left: 10px;
+}
+#left{
+    transform: rotate(-180deg);
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern ve Şık Sayfa</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 30px;
+            padding-top: 50px;
+        }
+        #loginContainer, #loginContainer2 {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 30px;
+        }
+        .content-container {
+            width: 100%;
+            max-width: 1000px;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        ul {
+            padding: 0;
+            list-style-type: none;
+        }
+        li {
+            margin: 10px 0;
+            color: #666;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+    <script src="..//JAVASCRIPT/QuickCraft.js"></script>
+</head>
+<body>
+    <!-- Login Menüsü 1 -->
+    <div id="loginContainer"></div>
+
+    <!-- Container 1 -->
+    <div class="content-container"></div>
+
+    <!-- Liste 1 -->
+    <ul id="techList1"></ul>
+
+    <!-- Resim 1 -->
+    <div class="image-container" id="imageContainer1"></div>
+
+    <!-- Login Menüsü 2 -->
+    <div id="loginContainer2"></div>
+
+    <!-- Container 2 -->
+    <div class="content-container"></div>
+
+    <!-- Liste 2 -->
+    <ul id="techList2"></ul>
+
+    <!-- Liste 3 -->
+    <ul id="techList3"></ul>
+
+    <!-- Resim 2 -->
+    <div class="image-container" id="imageContainer2"></div>
+
+    <script>
+        // Login Menüsü 1
+        login('100%', '350px', { placeholder: 'Kullanıcı Adı', type: 'text' }, 
+                  { text: 'Giriş Yap', onClick: () => alert('Giriş yapıldı!') }, 
+                  { parent: document.getElementById('loginContainer') });
+
+        // Login Menüsü 2
+        login('100%', '350px', { placeholder: 'E-posta Adresi', type: 'email' }, 
+                  { text: 'Kaydol', onClick: () => alert('Kaydolma işlemi tamamlandı!') }, 
+                  { parent: document.getElementById('loginContainer2') });
+
+        // Container 1
+        container('100%', '400px', 'solid 2px #ccc', { yanyana: true, ortaladikey: true, ortalayatay: true }, 
+                  { parent: document.querySelector('.content-container') });
+
+        // Container 2
+        container('100%', '400px', 'solid 2px #ccc', { yanyana: true, ortaladikey: true, ortalayatay: true }, 
+                  { parent: document.querySelectorAll('.content-container')[1] });
+
+        // Liste 1
+        liste(['HTML', 'CSS', 'JavaScript', 'React', 'Node.js'], false, 
+              { color: '#333', fontSize: '18px', margin: '10px 0' }, 
+              { parent: document.getElementById('techList1') });
+
+        // Liste 2
+        liste(['Python', 'Django', 'Flask', 'Ruby', 'Go'], false, 
+              { color: '#333', fontSize: '18px', margin: '10px 0' }, 
+              { parent: document.getElementById('techList2') });
+
+        // Liste 3
+        liste(['Photoshop', 'Illustrator', 'Figma', 'Sketch', 'InDesign'], false, 
+              { color: '#333', fontSize: '18px', margin: '10px 0' }, 
+              { parent: document.getElementById('techList3') });
+
+        // Resim 1
+        resim('https://via.placeholder.com/800x400', 'Placeholder Image 1', 
+              { width: '80%', height: 'auto', borderRadius: '8px', margin: '20px auto' }, 
+              { parent: document.getElementById('imageContainer1') });
+
+        // Resim 2
+        resim('https://via.placeholder.com/800x400', 'Placeholder Image 2', 
+              { width: '80%', height: 'auto', borderRadius: '8px', margin: '20px auto' }, 
+              { parent: document.getElementById('imageContainer2') });
+    </script>
+</body>
+</html>
