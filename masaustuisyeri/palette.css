@@ -1,0 +1,48 @@
+.font-color{
+    color: #4B0082;
+}
+.small-div {
+    background-color: #FF69B4; 
+}
+
+.large-div {
+  background-color: #BA55D3;
+}
+a:hover, button:hover {
+  background-color: #FF00FF;
+  color: white;
+}
+
+.table {
+    background-color: #FFFFFF;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    color: #333333;
+  }
+  .table th {
+    background-color: #800080;
+    color: white; 
+    overflow: hidden;
+
+  }
+  .table thead{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+
+  .table tr {
+    background-color: #FFB6C1;
+  }
+
+
+  .table tr:hover {
+    background-color: #FF00FF;
+    color: white;
+  }

@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #fdd0df; 
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+#historyDiv {
+    position: fixed;
+    left: -350px;
+    width: 350px;
+    height: 100%;
+    transition: left 0.3s ease;
+    border-bottom-right-radius: 50px;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+}
+
+#historyDiv #divimsi {
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    user-select: none;
+    border-bottom: #4B0082 2px solid;
+    border-top: #4B0082 2px solid;
+}
+.absolute{
+    position: absolute;
+}
+
+#flo1{
+    opacity: 0.5;
+}
+#flo2{
+    margin-top: 310px;
+    transform: rotate(180deg);
+    transform: scaleY(-1);
+    opacity: 0.5;
+}
+
+#logo{
+    opacity: 0.3;
+    margin-left: 25%;
+}
+.mainTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.mainTable th {
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.mainTable tr{
+    user-select: none;
+    transition: all 0.2s;
+}
+.mainTable td {
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mainTable tr:hover {
+    transition: all 0.2s;
+}
+
+#toggleButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
